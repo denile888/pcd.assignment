@@ -6,6 +6,7 @@
 void main() {
 	
 		printf("Hello World!");
+	         printf("be happy");
 		return 0;
 	
 	
