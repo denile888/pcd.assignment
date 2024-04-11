@@ -9,7 +9,7 @@ void main() {
 	         printf("be happy");
 	printf("okayyyy"); 
 	printf("Bye bye");
-	ccc
+	cccdd
 		return 0;
 	
 	
