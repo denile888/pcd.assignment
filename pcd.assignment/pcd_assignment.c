@@ -7,9 +7,8 @@ void main() {
 	
 		printf("Hello World!");
 	         printf("be happy");
-	printf("okayyyy"); 
+	printf("okayyyy");
 	printf("Bye bye");
-	cccdd
 		return 0;
 	
 	
