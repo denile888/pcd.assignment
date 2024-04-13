@@ -5,14 +5,12 @@
 
 void main() {
 	
-		printf("Hello World!");
-	         printf("be happy");
+	printf("Hello World!");
+	printf("be happy");
 	printf("okayyyy");
 	printf("Bye bye");
-		return 0;
-	
-	
-
+	return 0;
 
 	system("pause");
+
 }
