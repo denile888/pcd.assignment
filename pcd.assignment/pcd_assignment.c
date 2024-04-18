@@ -4,19 +4,35 @@
 #include <string.h>
 #pragma warning(disable:4996)
 
-void displayMenu();
+// Main
 void staffInformation();
 void memberInformation();
 void trainScheduling();
 void ticketBooking();
 
+// Staff Information
+
+// Member Information
+
+// Train Scheduling
+
+// Ticket Booking
+
 int main() {
 	int choice;
 
 	do {
-		displayMenu();
+		printf("==WELCOME TO TRAIN TICKETING SYSTEM====\n");
+		printf("===========Menu===============\n");
+		printf("1. Staff Information\n");
+		printf("2. Member Information\n");
+		printf("3. Train Scheduling\n");
+		printf("4. Ticket Booking\n");
+		printf("5. Exit\n");
+		printf("==============================\n");
 
 		printf("Enter your choice: ");
+		rewind(stdin);
 		scanf("%d", &choice);
 
 		switch (choice) {
@@ -48,17 +64,6 @@ int main() {
 	} while (choice != 5);
 
 	return 0;
-}
-
-void displayMenu() {
-	printf("==WELCOME TO TRAIN TICKETING SYSTEM====\n");
-	printf("===========Menu===============\n");
-	printf("1. Staff Information\n");
-	printf("2. Member Information\n");
-	printf("3. Train Scheduling\n");
-	printf("4. Ticket Booking\n");
-	printf("5. Exit\n");
-	printf("==============================\n");
 }
 
 void staffInformation() {
