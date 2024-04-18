@@ -24,14 +24,14 @@ int main() {
 	int choice;
 
 	do {
-		printf("==WELCOME TO TRAIN TICKETING SYSTEM====\n");
+		printf("====WELCOME TO TRAIN TICKETING SYSTEM====\n\n");
 		printf("===========Menu===============\n");
 		printf("1. Staff Information\n");
 		printf("2. Member Information\n");
 		printf("3. Train Scheduling\n");
 		printf("4. Ticket Booking\n");
 		printf("5. Exit\n");
-		printf("==============================\n");
+		printf("==============================\n\n");
 
 		printf("Enter your choice: ");
 		rewind(stdin);
@@ -68,22 +68,71 @@ int main() {
 	return 0;
 }
 
+// Main
 void staffInformation() {
-	printf("You selected staff information system\n");
+	printf("You have selected staff information system.\n\n");
+	int option;
+	do {
+		printf("\n\t- STAFF INFORMATION MENU -\n\n");
+		printf("===============================================\n");
+		printf(" 1. Add Staff Login Account\n");
+		printf(" 2. Display Staff Information\n");
+		printf(" 3. Modify Staff Account And Information\n");
+		printf(" 4. Search Staff Information\n");
+		printf(" 5. Delete Staff Account\n");
+		printf(" 6. Back to Main Menu\n");
+		printf("===============================================\n\n");
+		printf("Please choose your selection: ");
+		rewind(stdin);
+		scanf("%d", &option);
+		printf("\n\n");
+		switch (option) {
+		case 1:
+			addStaff();
+			break;
+		case 2:
+			displayStaff();
+			break;
+		case 3:
+			modifyStaff();
+			break;
+		case 4:
+			searchStaff();
+			break;
+		case 5:
+			deleteStaff();
+			break;
+		case 6:
+			break;
+		default:
+			printf("Invalid choice. Please select again.\n\n");
+		}
+	} while (option != 6);
 	return 0;
 }
 
 void memberInformation() {
-	printf("You selected member information system.\n");
+	printf("You have selected member information system.\n");
 	return 0;
 }
 
 void trainScheduling() {
-	printf("You selected train scheduling system.\n");
+	printf("You have selected train scheduling system.\n");
 	return 0;
 }
 
 void ticketBooking() {
-	("You selected ticket booking system.\n");
+	("You have selected ticket booking system.\n");
 	return 0;
 }
+
+// Staff Information
+
+
+// Member Information
+
+
+// Train Scheduling
+
+
+// Ticket Booking
