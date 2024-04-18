@@ -64,7 +64,7 @@ void displayMenu() {
 void staffInformation() {
 	printf("You selected staff information system\n")
 	printf
-	return 0;
+	
 }
 
 void memberInformation() {
