@@ -11,6 +11,8 @@ void trainScheduling();
 void ticketBooking();
 
 // Staff Information
+void addStaff();
+void displayStaff();
 
 // Member Information
 
