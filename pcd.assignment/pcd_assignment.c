@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -74,10 +73,5 @@ void memberInformation() {
 
 void trainScheduling() {
 	printf("You selected train scheduling system.\n");
-	return 0;
-}
-
-void ticketBooking() {
-	("You selected ticket booking system.\n");
 	return 0;
 }
