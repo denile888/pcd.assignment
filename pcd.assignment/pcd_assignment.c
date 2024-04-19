@@ -17,7 +17,12 @@ void displayStaff();
 // Member Information
 
 // Train Scheduling
-
+void displaySchedule();
+void searchSchedule();
+void addSchedule();
+void modifySchedule();
+void deleteSchedule();
+void viewReport();
 // Ticket Booking
 
 
