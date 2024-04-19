@@ -116,6 +116,7 @@ void staffInformation() {
 			printf("Invalid choice. Please select again.\n\n");
 		}
 	} while (option != 6);
+
 	return 0;
 }
 
@@ -153,7 +154,7 @@ void trainScheduling() {
         scanf("%d", &option); 
 
 
-        switch (choice) {
+        switch (option) {
         case 1: DisplaySchedule(); break;
         case 2: SearchSchedule(); break;
         case 3: AddSchedule(); break;
@@ -162,10 +163,9 @@ void trainScheduling() {
         case 6: ViewReport(); break;
         default: printf("Invalid Choice \n\n");
         }
-	} while (choice != 7);  
+	} while (option != 7);  
 }
-
-	return 0;
+return 0;
 }
 
 void ticketBooking() {
