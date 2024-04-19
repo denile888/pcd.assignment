@@ -18,6 +18,37 @@ void displayStaff();
 
 // Train Scheduling
 
+int main() {
+	int choice;
+	do {
+        printf("\nTrain Ticketing System Menu:\n");
+        printf("1. Display Schedule\n");
+        printf("2. Search Schedule\n");
+        printf("3. Add Schedule\n");
+        printf("4. Modify Schedule\n");
+        printf("5. Delete Schedule\n");
+        printf("6. View Report\n");
+        printf("7. Exit\n");
+	printf("==============================\n\n");
+
+        printf("Enter your choice > "); 
+        rewind(stdin);
+        scanf("%d", &choice); 
+
+
+        switch (choice) {
+        case 1: DisplaySchedule(); break;
+        case 2: SearchSchedule(); break;
+        case 3: AddSchedule(); break;
+        case 4: ModifySchedule(); break;
+        case 5: DeleteSchedule(); break;
+        case 6: ViewReport(); break;
+        default: printf("Invalid Choice.Please Try Again. \n\n");
+        }
+	} while (choice != 7);  
+}
+
+
 // Ticket Booking
 
 int main() {
