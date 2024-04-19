@@ -23,6 +23,7 @@ void addSchedule();
 void modifySchedule();
 void deleteSchedule();
 void viewReport();
+
 // Ticket Booking
 
 
@@ -160,18 +161,19 @@ void trainScheduling() {
 
 
         switch (option) {
-        case 1: DisplaySchedule(); break;
-        case 2: SearchSchedule(); break;
-        case 3: AddSchedule(); break;
-        case 4: ModifySchedule(); break;
-        case 5: DeleteSchedule(); break;
-        case 6: ViewReport(); break;
+        case 1: displaySchedule(); break;
+        case 2: searchSchedule(); break;
+        case 3: addSchedule(); break;
+        case 4: modifySchedule(); break;
+        case 5: deleteSchedule(); break;
+        case 6: viewReport(); break;
         default: printf("Invalid Choice \n\n");
         }
-	} while (option != 7);  
+    } while (option != 7);  
+	
+   return 0;
 }
-return 0;
-}
+
 
 void ticketBooking() {
 	("You have selected ticket booking system.\n");
