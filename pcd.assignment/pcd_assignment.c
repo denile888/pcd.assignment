@@ -20,6 +20,11 @@ void displayStaff();
 
 // Ticket Booking
 
+
+
+
+
+// Main
 int main() {
 	int choice;
 
@@ -68,10 +73,10 @@ int main() {
 	return 0;
 }
 
-// Main
 
 
 
+// Staff Information
 void staffInformation() {
 	printf("You have selected staff information system.\n\n");
 	int option;
@@ -113,7 +118,7 @@ void staffInformation() {
 	} while (option != 6);
 	return 0;
 }
-// Staff Information
+
 
 
 
@@ -122,12 +127,15 @@ void memberInformation() {
 	printf("You have selected member information system.\n");
 	return 0;
 }
+
+
+
 // Member Information
 
 
 
 
-
+// Train Scheduling
 void trainScheduling() {
 	printf("You have selected train scheduling system.\n");
 	int option;
@@ -164,8 +172,6 @@ void ticketBooking() {
 	("You have selected ticket booking system.\n");
 	return 0;
 }
-// Train Scheduling
-
 
 
 
