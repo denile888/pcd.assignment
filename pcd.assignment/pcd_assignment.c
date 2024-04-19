@@ -69,6 +69,9 @@ int main() {
 }
 
 // Main
+
+
+
 void staffInformation() {
 	printf("You have selected staff information system.\n\n");
 	int option;
@@ -110,14 +113,50 @@ void staffInformation() {
 	} while (option != 6);
 	return 0;
 }
+// Staff Information
+
+
+
 
 void memberInformation() {
 	printf("You have selected member information system.\n");
 	return 0;
 }
+// Member Information
+
+
+
+
 
 void trainScheduling() {
 	printf("You have selected train scheduling system.\n");
+	int option;
+	do {
+        printf("\nTrain Scheduling System Menu:\n");
+        printf("1. Display Schedule\n");
+        printf("2. Search Schedule\n");
+        printf("3. Add Schedule\n");
+        printf("4. Modify Schedule\n");
+        printf("5. Delete Schedule\n");
+        printf("6. View Report\n");
+        printf("7. Exit\n");
+        printf("Enter your choice > "); 
+        rewind(stdin);
+        scanf("%d", &option); 
+
+
+        switch (choice) {
+        case 1: DisplaySchedule(); break;
+        case 2: SearchSchedule(); break;
+        case 3: AddSchedule(); break;
+        case 4: ModifySchedule(); break;
+        case 5: DeleteSchedule(); break;
+        case 6: ViewReport(); break;
+        default: printf("Invalid Choice \n\n");
+        }
+	} while (choice != 7);  
+}
+
 	return 0;
 }
 
@@ -125,14 +164,10 @@ void ticketBooking() {
 	("You have selected ticket booking system.\n");
 	return 0;
 }
-
-// Staff Information
-
-
-// Member Information
-
-
 // Train Scheduling
+
+
+
 
 
 // Ticket Booking
